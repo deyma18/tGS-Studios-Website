@@ -1,156 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="tGS Studios Portfolio - View our professional photography work including weddings, portraits, events and commercial projects in Salford.">
-    <meta name="keywords" content="photography portfolio, photographer Salford, wedding photography, portrait photography, event photography">
-    <title>Portfolio - tGS Studios - Professional Photography Services</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – tGS Studios</title>
+  <meta name="description" content="tGS Studios photography portfolio – weddings, portraits, events, commercial work.">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5VBQ62VZ2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-T5VBQ62VZ2');
-    </script>
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet"></noscript>
-
-    <!-- Preload critical portfolio images -->
-    <link rel="preload" as="image" href="images/portfolio/_MG_0685-28_1751928700191.jpg">
-    <link rel="preload" as="image" href="images/portfolio/_MG_1443-36_1751928700191.jpg">
-    <link rel="preload" as="image" href="images/portfolio/_MG_2758_1751928700191.JPG">
-    <link rel="preload" as="image" href="images/portfolio/4new_1751928700191.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Portfolio grid styles */
+    .portfolio-hero { padding: 3rem 0 2rem; }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-gap: 1.2rem;
+      margin-top: 2rem;
+    }
+    .portfolio-item {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+      transition: transform 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+    .portfolio-item:hover {
+      transform: translateY(-4px);
+    }
+    .portfolio-thumb {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+    }
+    .portfolio-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .portfolio-item:hover .portfolio-thumb img {
+      transform: scale(1.05);
+    }
+    .portfolio-caption {
+      padding: 0.8rem 1rem;
+      background: rgba(0,0,0,0.85);
+      margin: 0;
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+    @media (min-width: 768px) {
+      .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        grid-gap: 1.4rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="tGS Studios" class="logo-image" onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'color: white; font-size: 1.5rem; font-weight: bold;\'>tGS Studios</span>';">
-                </a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="portfolio.html" class="nav-link">Portfolio</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="blog.html" class="nav-link">Blog</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </div>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Portfolio Header -->
-    <section class="portfolio-header">
-        <div class="portfolio-header-content">
-            <h1>Portfolio</h1>
-            <p>Professional Photography by tGS Studios</p>
-        </div>
-    </section>
-
-    <!-- Portfolio Image Collage -->
-    <section class="portfolio-collage">
-        <div class="collage-container">
-            <div class="image-item large">
-                <img src="images/portfolio/_MG_0685-28_1751928700191.jpg" alt="Professional Photography" loading="eager" decoding="async">
-            </div>
-            <div class="image-item medium">
-                <img src="images/portfolio/_MG_0701-42_1751928700191.jpg" alt="Portrait Photography" loading="eager" decoding="async">
-            </div>
-            <div class="image-item small">
-                <img src="images/portfolio/_MG_1443-36_1751928700191.jpg" alt="Creative Photography" loading="eager" decoding="async">
-            </div>
-            <div class="image-item medium">
-                <img src="images/portfolio/_MG_1803-7-min_1751928700191.jpg" alt="Event Photography" loading="eager" decoding="async">
-            </div>
-            <div class="image-item large">
-                <img src="images/portfolio/_MG_1829-24-min_1751928700191.jpg" alt="Wedding Photography" loading="eager" decoding="async">
-            </div>
-            <div class="image-item small">
-                <img src="images/portfolio/_MG_2758_1751928700191.JPG" alt="Commercial Photography" loading="eager" decoding="async" onerror="this.src='images/portfolio/_MG_2758_1751928700191.jpg'">
-            </div>
-            <div class="image-item medium">
-                <img src="images/portfolio/_MG_3283_1751928700191.JPG" alt="Studio Photography" loading="lazy" onerror="this.src='images/portfolio/_MG_3283_1751928700191.jpg'">
-            </div>
-            <div class="image-item large">
-                <img src="images/portfolio/_MG_4252_1751928700191.JPG" alt="Lifestyle Photography" loading="lazy" onerror="this.src='images/portfolio/_MG_4252_1751928700191.jpg'">
-            </div>
-            <div class="image-item small">
-                <img src="images/portfolio/_MG_6107-429_1751928700191.jpg" alt="Fashion Photography" loading="lazy">
-            </div>
-            <div class="image-item medium">
-                <img src="images/portfolio/_MG_6126-444_1751928700191.jpg" alt="Professional Portraits" loading="lazy">
-            </div>
-            <div class="image-item large">
-                <img src="images/portfolio/_MG_8312_1751928700191.JPG" alt="Artistic Photography" loading="lazy" onerror="this.src='images/portfolio/_MG_8312_1751928700191.jpg'">
-            </div>
-            <div class="image-item small">
-                <img src="images/portfolio/4new_1751928700191.jpg" alt="Creative Shots" loading="lazy">
-            </div>
-            <div class="image-item medium">
-                <img src="images/portfolio/N_MG_0913_1751928700191.jpg" alt="Nature Photography" loading="lazy">
-            </div>
-            <div class="image-item large">
-                <img src="images/portfolio/N_MG_0942_1751928700191.jpg" alt="Documentary Style" loading="lazy">
-            </div>
-            <div class="image-item small">
-                <img src="images/portfolio/N_MG_1113_1751928700192.jpg" alt="Contemporary Photography" loading="lazy">
-            </div>
-            <div class="image-item medium">
-                <img src="images/portfolio/N_MG_1247_1751928700192.jpg" alt="Modern Photography" loading="lazy">
-            </div>
-            <div class="image-item large">
-                <img src="images/portfolio/check_MG_8051_1751928700191.jpg" alt="Professional Work" loading="lazy">
-            </div>
-            <div class="image-item small">
-                <img src="images/portfolio/check_MG_8088_1751928700191.jpg" alt="Quality Photography" loading="lazy">
-            </div>
-            <div class="image-item medium">
-                <img src="images/portfolio/checkb&w_MG_8043_1751928700191.jpg" alt="Black and White Photography" loading="lazy">
-            </div>
-        </div>
-    </section>
-
-    <!-- Image Modal -->
-    <div class="image-modal" id="imageModal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <img src="" alt="" id="modalImage">
-            <div class="modal-nav">
-                <button class="modal-prev">&larr;</button>
-                <button class="modal-next">&rarr;</button>
-            </div>
-        </div>
+  <!-- Header (same as index) -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">tGS</span>
+        <span class="logo-text">Studios</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Footer with Social Media Links -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://www.facebook.com/tGSStu/about" class="social-link" title="Like us on Facebook" target="_blank" rel="noopener">Facebook</a>
-                <a href="https://twitter.com/tgs_stu" class="social-link" title="Follow us on Twitter" target="_blank" rel="noopener">Twitter</a>
-                <a href="https://www.instagram.com/tgsstudios/" class="social-link" title="See us on Instagram" target="_blank" rel="noopener">Instagram</a>
-            </div>
-            <p>&copy; 2024 tGS Studios. All rights reserved.</p>
-        </div>
-    </footer>
+  <!-- Hero -->
+  <section class="hero portfolio-hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Portfolio</h1>
+        <p>Recent work from weddings, portraits, events, and commercial projects.</p>
+        <p class="hero-subtext">Click any image to view full size.</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/main.js"></script>
-    <script src="js/analytics.js"></script>
-</body>
-</html>
+  <!-- Wedding section -->
+  <section class="section">
+    <div class="container">
+      <header class="section-header">
+        <h2>Weddings</h2>
+        <p>Relaxed, documentary-style coverage.</p>
+      </header>
+      <div class="portfolio-grid">
+        <a href="images/hero/hero-main1.jpg" class="portfolio-item" target="_blank">
+          <div class="portfolio-thumb">
+            <img src="images/hero/hero-main1.jpg" alt="Wedding ceremony" loading="lazy">
+          </div>
+          <p class="portfolio-caption">Wedding ceremony moment</p>
+        </a>
+        <a href="images/hero/hero-main2.jpg" class="portfolio-item" target="_blank">
+          <div class="portfolio-thumb">
+            <img src="images/hero/hero-main2.jpg" alt="Wedding couple" loading="lazy">
+          </div>
+          <p class="portfolio-caption">Wedding couple portrait</p>
+        </a>
+        <a href="images/hero/hero-main3.jpg" class="portfolio-item" target="_blank">
+          <div class="portfolio-thumb">
+            <img src="images/hero/hero-main3.jpg" alt="Wedding detail" loading="lazy">
+          </div>
+          <p class="portfolio-caption">Wedding details</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portrait section -->
+  <section class="section section-alt">
+    <div class="container">
+      <header class="section-header">
+        <h2>Portraits</h2>
+        <p>Studio and location sessions.</p>
+      </header>
+      <div class="portfolio-grid">
+        <a href="images/about-hero1.jpg" class="portfolio-item" target="_blank">
+          <div class="portfolio-thumb">
+            <img src="images/about-hero1.jpg" alt="Portrait 1" loading="lazy">
+          </div>
+          <p class="portfolio-caption">Portrait session #1</p>
+        </a>
+        <a href="images/about-hero2.jpg" class="portfolio-item" target="_blank">
+          <div class="portfolio-thumb">
+            <img src="images/about-hero2.jpg" alt="Portrait 2" loading="lazy">
+          </div>
+          <p class="portfolio-caption">Portrait session #2</p>
+        </a>
+        <a href="images/about-hero3.jpg" class="portfolio-item" target="_blank">
+          <div class="portfolio-thumb">
+            <img src="images/about-hero3.jpg" alt="Portrait 3" loading="lazy">
+          </div>
+          <p class="portfolio-caption">Portrait session #3</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same) -->
+  <footer class="site-footer">
+    <div class="container
