@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TGS Studios - Professional Photography Services in Salford. Wedding, Portrait, Event & Commercial Photography.">
+    <meta name="keywords" content="photography, photographer, Salford, wedding photography, portrait photography, event photography">
+    <title>TGS Studios - Professional Photography Services</title>
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">TGS Studios</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Capturing Life's Beautiful Moments</h1>
+            <p>Professional photography services in Salford and surrounding areas. Specializing in weddings, portraits, events, and commercial photography.</p>
+            <div class="hero-buttons">
+                <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+                <a href="services.html" class="btn btn-secondary">Book Session</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Your hero image will go here -->
+            <img src="images/hero-photo.jpg" alt="Professional Photography by TGS Studios" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Featured Work -->
+    <section class="featured-work">
+        <div class="container">
+            <h2>Featured Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="wedding">
+                    <img src="images/portfolio/wedding-1.jpg" alt="Wedding Photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Wedding Photography</h3>
+                        <p>Capturing your special day</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="portrait">
+                    <img src="images/portfolio/portrait-1.jpg" alt="Portrait Photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Portrait Sessions</h3>
+                        <p>Professional headshots & portraits</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="event">
+                    <img src="images/portfolio/event-1.jpg" alt="Event Photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Event Photography</h3>
+                        <p>Corporate & social events</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="commercial">
+                    <img src="images/portfolio/commercial-1.jpg" alt="Commercial Photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Commercial Work</h3>
+                        <p>Product & business photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Wedding Photography</h3>
+                    <p>Complete wedding day coverage with artistic storytelling approach.</p>
+                    <a href="services.html#wedding" class="service-link">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <h3>Portrait Sessions</h3>
+                    <p>Professional headshots, family portraits, and personal branding photos.</p>
+                    <a href="services.html#portrait" class="service-link">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <h3>Event Photography</h3>
+                    <p>Corporate events, parties, and special occasion coverage.</p>
+                    <a href="services.html#event" class="service-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Blog Posts -->
+    <section class="blog-preview">
+        <div class="container">
+            <h2>Latest from the Blog</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="images/blog/blog-1.jpg" alt="Photography Tips" loading="lazy">
+                    <div class="blog-content">
+                        <h3>10 Essential Tips for Better Portrait Photography</h3>
+                        <p class="blog-excerpt">Master the art of portrait photography with these professional techniques...</p>
+                        <a href="blog/portrait-photography-tips.html" class="blog-link">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="images/blog/blog-2.jpg" alt="Wedding Photography" loading="lazy">
+                    <div class="blog-content">
+                        <h3>Planning Your Wedding Photography Timeline</h3>
+                        <p class="blog-excerpt">A comprehensive guide to creating the perfect photography schedule for your big day...</p>
+                        <a href="blog/wedding-timeline-guide.html" class="blog-link">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="images/blog/blog-3.jpg" alt="Business Photography" loading="lazy">
+                    <div class="blog-content">
+                        <h3>Building Your Photography Business Brand</h3>
+                        <p class="blog-excerpt">Essential strategies for establishing a strong brand identity in the photography industry...</p>
+                        <a href="blog/photography-business-branding.html" class="blog-link">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Capture Your Moments?</h2>
+            <p>Let's discuss your photography needs and create something beautiful together.</p>
+            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TGS Studios</h3>
+                    <p>Professional photography services capturing life's most precious moments with artistic excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#wedding">Wedding Photography</a></li>
+                        <li><a href="services.html#portrait">Portrait Sessions</a></li>
+                        <li><a href="services.html#event">Event Photography</a></li>
+                        <li><a href="services.html#commercial">Commercial Work</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Salford, Greater Manchester</p>
+                    <p>Email: info@tgsstudios.com</p>
+                    <p>Phone: +44 XXX XXX XXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TGS Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/analytics.js"></script>
+    
+    <!-- Business Intelligence Data Collection -->
+    <script>
+        // Track page views and user interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track portfolio item clicks
+            document.querySelectorAll('.portfolio-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    gtag('event', 'portfolio_view', {
+                        'category': category,
+                        'page_title': document.title
+                    });
+                    
+                    // Send data to Google Sheets via Apps Script
+                    trackPortfolioClick(category);
+                });
+            });
+            
+            // Track service interest
+            document.querySelectorAll('.service-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    const service = this.getAttribute('href').split('#')[1];
+                    gtag('event', 'service_interest', {
+                        'service_type': service
+                    });
+                });
+            });
+        });
+        
+        function trackPortfolioClick(category) {
+            // This will connect to your Google Apps Script
+            const data = {
+                timestamp: new Date().toISOString(),
+                category: category,
+                page: window.location.pathname,
+                userAgent: navigator.userAgent
+            };
+            
+            // Send to Google Apps Script Web App
+            // fetch('YOUR_APPS_SCRIPT_WEB_APP_URL', {
+            //     method: 'POST',
+            //     body: JSON.stringify(data)
+            // });
+        }
+    </script>
+</body>
+</html>
