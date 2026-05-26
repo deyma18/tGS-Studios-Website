@@ -1,0 +1,24 @@
+.hero-copy,
+.section-head,
+.split-copy,
+.service-meta,
+.contact-card,
+.case-panel,
+.post-card,
+.brand-card,
+.value-card,
+.info-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 500px;
+}
+
+@media (min-width: 1200px) {
+  .hero-inner { min-height: 68vh; }
+}
+
+@media (max-width: 540px) {
+  .btn-row { width: 100%; }
+  .btn { width: 100%; }
+  .stat-grid { grid-template-columns: 1fr; }
+  .nav-shell { min-height: 72px; }
+}

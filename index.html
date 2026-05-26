@@ -3,212 +3,246 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tGS Studios – Professional Photography in Salford</title>
-  <meta name="description" content="tGS Studios – wedding, portrait, event and commercial photography in Salford and Greater Manchester.">
-
-  <link rel="stylesheet" href="css/style.css">
+  <title>tGS Creative | Strategy, Management, Media, and Brand Building</title>
+  <meta name="description" content="tGS Creative builds strategy, management, media, and brands for expertise that deserves authority.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="business-data.js" defer></script>
 </head>
 <body>
-  <!-- Header / Nav -->
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <span class="logo-mark">tGS</span>
-        <span class="logo-text">Studios</span>
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="tGS Creative home">
+        <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect x="4" y="4" width="40" height="40" rx="14" stroke="currentColor" stroke-width="2"></rect>
+          <path d="M14 17H34" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+          <path d="M24 17V31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+          <path d="M16 31C18.5 34 21 35.5 24 35.5C27 35.5 29.5 34 32 31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+        </svg>
+        <span class="brand-text"><strong>tGS Creative</strong><span>Strategy · Media · Brands</span></span>
       </a>
-
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="portfolio.html" class="nav-link">Portfolio</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
+      <div class="nav-row">
+        <nav class="main-nav" data-site-nav>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="work.html">Work</a>
+          <a href="wya.html">WYA</a>
+          <a href="blog.html">Writing</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+        </button>
+        <button class="icon-btn hide-mobile" type="button" data-theme-toggle aria-label="Toggle theme"></button>
+        <a class="btn btn-primary hide-mobile" href="contact.html">Start a brief</a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <p class="eyebrow">Salford • Greater Manchester</p>
-        <h1>Capturing life’s beautiful moments.</h1>
-        <p class="hero-text">
-          Wedding, portrait, event and commercial photography crafted to feel natural,
-          timeless and true to you.
-        </p>
-        <div class="hero-actions">
-          <a href="portfolio.html" class="btn btn-primary">View portfolio</a>
-          <a href="services.html" class="btn btn-outline">Book a session</a>
-        </div>
-        <p class="hero-subtext">
-          Available across Salford, Manchester and the North West.
-        </p>
-      </div>
-
-      <div class="hero-panel">
-        <div class="hero-card">
-          <p class="hero-card-label">Featured work</p>
-          <p class="hero-card-title">Modern wedding storytelling</p>
-          <p class="hero-card-text">
-            Relaxed, documentary‑style coverage with just enough direction to keep you comfortable in front of the lens.
-          </p>
-        </div>
-        <div class="hero-meta">
-          <div>
-            <p class="hero-meta-number">4+</p>
-            <p class="hero-meta-label">Years shooting</p>
-          </div>
-          <div>
-            <p class="hero-meta-number">100+</p>
-            <p class="hero-meta-label">Sessions captured</p>
+  <main id="main">
+    <section class="section hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">tGS Creative</span>
+          <h1>We build what real expertise deserves.</h1>
+          <div class="divider"></div>
+          <p class="lead">tGS Creative is the house for strategy, management, media production, and brand building shaped around people and ideas with genuine weight behind them.</p>
+          <p>We work where authority, visibility, and execution need to meet — across the UK, West Africa, and the United States.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="work.html">View the work</a>
+            <a class="btn btn-secondary" href="services.html">Explore services</a>
           </div>
         </div>
+        <aside class="hero-card reveal">
+          <span class="hero-tag">Current focus</span>
+          <h3>Parent house for consulting now, brand architecture next.</h3>
+          <p>What began as a consultancy is now becoming the wider tGS Creative system — one home for strategic work, media execution, and the brands being built underneath it.</p>
+          <div class="tag-row">
+            <span class="tag">Consulting</span>
+            <span class="tag">Management</span>
+            <span class="tag">Media</span>
+          </div>
+          <div class="stat-grid">
+            <div><strong>3</strong><span>Regions in play</span></div>
+            <div><strong>4</strong><span>Core capabilities</span></div>
+            <div><strong>1</strong><span>Standard: exceed expectations</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section surface">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">What we do</span>
+          <h2>Built for work that needs depth, not decoration.</h2>
+          <p>Our services are designed for founders, authors, executives, academics, public voices, and brands that need clear thinking and serious execution.</p>
+        </header>
+        <div class="cards-3">
+          <article class="card reveal">
+            <span class="card-number">01</span>
+            <h3>Strategy consulting</h3>
+            <p>Market entry, operational clarity, positioning, and growth frameworks built for situations with actual complexity.</p>
+            <a class="card-link" href="services.html#strategy">See strategy</a>
+          </article>
+          <article class="card reveal">
+            <span class="card-number">02</span>
+            <h3>Management</h3>
+            <p>Representation, deal positioning, profile architecture, and long-term stewardship for work that needs the right platform.</p>
+            <a class="card-link" href="services.html#management">See management</a>
+          </article>
+          <article class="card reveal">
+            <span class="card-number">03</span>
+            <h3>Media production</h3>
+            <p>Podcast, video, and media placement built around message, logistics, and reach — not vanity output.</p>
+            <a class="card-link" href="services.html#media">See production</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">The studio</span>
+          <h2>One creative house, different expressions.</h2>
+          <p>tGS Creative is the parent platform. Under it sit brands and ventures with their own lane, tone, and ambition.</p>
+        </header>
+        <div class="brand-grid">
+          <article class="brand-card reveal">
+            <span class="tag">Parent house</span>
+            <h3>tGS Creative Works</h3>
+            <p>The consulting and media arm — strategy, management, production, and the infrastructure behind serious authority-building.</p>
+            <a class="card-link" href="services.html">Explore the consultancy</a>
+          </article>
+          <article class="brand-card reveal">
+            <span class="tag">Fashion brand</span>
+            <h3>WYA — Wear Your Ambition</h3>
+            <p>A fashion label built around one principle: execute. The philosophy is direct, self-defining, and designed to live beyond clothing.</p>
+            <a class="card-link" href="wya.html">Enter WYA</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="insight-strip section-tight">
+      <div class="container metrics-grid">
+        <div class="metric reveal"><strong class="metric-number">3</strong><span>Regions of active work</span></div>
+        <div class="metric reveal"><strong class="metric-number">10+</strong><span>Years building across industries</span></div>
+        <div class="metric reveal"><strong class="metric-number">1</strong><span>Operating standard</span></div>
       </div>
     </div>
-  </section>
 
-  <!-- Services teaser -->
-  <section class="section">
-    <div class="container">
-      <header class="section-header">
-        <h2>Photography services</h2>
-        <p>
-          Flexible packages tailored to weddings, portraits, events and small businesses.
-        </p>
-      </header>
-
-      <div class="grid grid-3">
-        <article class="card">
-          <h3>Wedding photography</h3>
-          <p>
-            Full‑day coverage from getting ready to the dance floor, with a focus on real emotion and candid moments.
-          </p>
-          <a href="services.html#wedding" class="card-link">Explore wedding coverage →</a>
-        </article>
-
-        <article class="card">
-          <h3>Portrait sessions</h3>
-          <p>
-            Studio or on‑location portraits for families, couples, creators and professionals who want images that feel like them.
-          </p>
-          <a href="services.html#portrait" class="card-link">View portrait options →</a>
-        </article>
-
-        <article class="card">
-          <h3>Event & commercial</h3>
-          <p>
-            Coverage for launches, corporate events and campaigns, plus content for brands and local businesses.
-          </p>
-          <a href="services.html#event" class="card-link">See event & commercial →</a>
-        </article>
+    <section class="section surface-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Selected work</span>
+          <h2>The work speaks best when it is concrete.</h2>
+          <p>We are not interested in filling a page with generic claims. A small number of serious engagements tells the story better.</p>
+        </header>
+        <div class="work-grid">
+          <article class="case-panel reveal">
+            <span class="tag">Management · Media · Publishing</span>
+            <h3>From zero digital footprint to international literary positioning.</h3>
+            <p>An 87-year-old Nigerian author and statesman, decades of intellectual history, and a strategy built for London, Nigeria, and the United States at the same time.</p>
+            <div class="tag-row">
+              <span class="tag">10 agent targets</span>
+              <span class="tag">3 countries</span>
+              <span class="tag">Premium podcast placement</span>
+            </div>
+            <a class="card-link" href="work.html">Read the case study</a>
+          </article>
+          <article class="case-panel reveal">
+            <span class="tag">Consulting · Operations</span>
+            <h3>A live consulting engagement inside downstream energy.</h3>
+            <p>Operational constraints, tacit knowledge, resilience gaps, and a business model shaped for implementation rather than presentation.</p>
+            <div class="tag-row">
+              <span class="tag">Nigeria</span>
+              <span class="tag">Business model development</span>
+              <span class="tag">Resilience strategy</span>
+            </div>
+            <a class="card-link" href="work.html">See the work</a>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Portfolio teaser -->
-  <section class="section section-alt">
-    <div class="container portfolio-preview">
-      <div class="portfolio-copy">
-        <h2>See the work, feel the moments.</h2>
-        <p>
-          From intimate ceremonies and city‑center weddings to relaxed portrait sessions and lively events,
-          every gallery is built around real connection.
-        </p>
-        <ul class="checklist">
-          <li>Warm, true‑to‑life colour and clean edits</li>
-          <li>Mixture of candid storytelling and gently posed portraits</li>
-          <li>Delivered via private online gallery, ready to share and print</li>
-        </ul>
-        <a href="portfolio.html" class="btn btn-primary">View full portfolio</a>
+    <section class="section">
+      <div class="container dual-grid">
+        <div class="split-copy reveal">
+          <span class="eyebrow">About the house</span>
+          <h2>Built at the intersection of strategy, media, and ideas.</h2>
+          <div class="divider"></div>
+          <p>tGS Creative exists because the people with the most substantial work behind them are often the least well-positioned in public. The job is to close that gap properly.</p>
+          <p>The leadership, the decision-making, and the tone are all grounded in one principle: give serious work the infrastructure it deserves.</p>
+          <a class="btn btn-secondary" href="about.html">Read the full story</a>
+        </div>
+        <aside class="quote-panel reveal">
+          <blockquote>“The standard is not volume. The standard is whether the work can still stand up when it becomes visible.”</blockquote>
+          <footer>Deyma, founder and director</footer>
+        </aside>
       </div>
+    </section>
 
-      <div class="portfolio-panel">
-        <div class="portfolio-box">Weddings</div>
-        <div class="portfolio-box">Portraits</div>
-        <div class="portfolio-box">Events</div>
-        <div class="portfolio-box">Commercial</div>
+    <section class="section-tight">
+      <div class="container cta-band reveal">
+        <div>
+          <span class="eyebrow">Start the conversation</span>
+          <h3>Have something worth building?</h3>
+          <p>Tell us what the work is, what stage it is at, and what needs to change.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="contact.html">Get in touch</a>
+          <a class="btn btn-secondary" href="wya.html">See WYA</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- About teaser -->
-  <section class="section">
-    <div class="container about-preview">
-      <div class="about-copy">
-        <h2>About tGS Studios</h2>
-        <p>
-          tGS Studios is a Salford‑based photography studio focused on honest, contemporary imagery.
-          The goal is simple: make you feel comfortable, listened to and genuinely excited about your photos.
-        </p>
-        <p>
-          Whether it’s a once‑in‑a‑lifetime wedding or a simple portrait refresh,
-          you’ll get calm guidance, clear communication and thoughtful storytelling.
-        </p>
-        <a href="about.html" class="btn btn-outline">Meet your photographer</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section cta">
-    <div class="container cta-inner">
-      <div>
-        <h2>Ready to plan your session?</h2>
-        <p>
-          Share a few details about your day or project and we’ll get back to you with dates, ideas and next steps.
-        </p>
-      </div>
-      <div class="cta-actions">
-        <a href="contact.html" class="btn btn-primary">Enquire now</a>
-        <a href="services.html" class="btn btn-outline">View packages</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container footer-grid">
       <div class="footer-col">
-        <p class="footer-logo">tGS Studios</p>
-        <p class="footer-text">
-          Professional photography in Salford & Greater Manchester.
-        </p>
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect x="4" y="4" width="40" height="40" rx="14" stroke="currentColor" stroke-width="2"></rect>
+            <path d="M14 17H34" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+            <path d="M24 17V31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+            <path d="M16 31C18.5 34 21 35.5 24 35.5C27 35.5 29.5 34 32 31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+          </svg>
+          <span class="brand-text"><strong>tGS Creative</strong><span>Strategy · Media · Brands</span></span>
+        </a>
+        <p>A creative house for strategy, management, media production, and brands being built with intention.</p>
       </div>
-
       <div class="footer-col">
-        <h3>Studio</h3>
-        <p>Salford, Greater Manchester</p>
-        <p><a href="mailto:thegsvisuals@gmail.com">thegsvisuals@gmail.com</a></p>
+        <h4>Pages</h4>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="wya.html">WYA</a>
+        <a href="blog.html">Writing</a>
+        <a href="contact.html">Contact</a>
       </div>
-
       <div class="footer-col">
-        <h3>Links</h3>
-        <p><a href="about.html">About</a></p>
-        <p><a href="portfolio.html">Portfolio</a></p>
-        <p><a href="services.html">Services</a></p>
-        <p><a href="contact.html">Contact</a></p>
+        <h4>Focus</h4>
+        <p>Strategy consulting</p>
+        <p>Management</p>
+        <p>Media production</p>
+        <p>Brand building</p>
       </div>
-
       <div class="footer-col">
-        <h3>Social</h3>
-        <p><a href="https://www.instagram.com/_tgsstudios" target="_blank" rel="noopener">Instagram</a></p>
-        <p><a href="https://www.facebook.com/tGSStu/about" target="_blank" rel="noopener">Facebook</a></p>
-        <p><a href="https://wa.me/353874077700" target="_blank" rel="noopener">WhatsApp</a></p>
+        <h4>Contact</h4>
+        <a href="mailto:info@tgsstudios.com">info@tgsstudios.com</a>
+        <a href="https://tgsstudios.co.uk" target="_blank" rel="noopener noreferrer">tgsstudios.co.uk</a>
+        <a href="https://www.linkedin.com/company/118834600" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </div>
-
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <p>© 2025 tGS Studios. All rights reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-        </div>
-      </div>
+    <div class="container footer-base">
+      <p>&copy; <span data-year></span> tGS Creative. All rights reserved.</p>
+      <p>Active from tgsstudios.co.uk while the future domain is prepared.</p>
     </div>
   </footer>
 </body>

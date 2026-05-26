@@ -1,156 +1,103 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="tGS Studios Photography Blog - Tips, insights, and behind-the-scenes content from professional photographers in Salford.">
-    <meta name="keywords" content="photography blog, photography tips, Salford photographer, wedding photography tips, portrait photography">
-    <title>Photography Blog - tGS Studios</title>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5VBQ62VZ2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-T5VBQ62VZ2');
-    </script>
-    
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing | tGS Creative</title>
+  <meta name="description" content="Writing and thought leadership from tGS Creative.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="business-data.js" defer></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="tGS Studios" class="logo-image" onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'color: white; font-size: 1.5rem; font-weight: bold;\'>tGS Studios</span>';">
-                </a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="portfolio.html" class="nav-link">Portfolio</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="blog.html" class="nav-link">Blog</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </div>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </div>
-    </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="tGS Creative home"><svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="14" stroke="currentColor" stroke-width="2"></rect><path d="M14 17H34" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path><path d="M24 17V31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path><path d="M16 31C18.5 34 21 35.5 24 35.5C27 35.5 29.5 34 32 31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path></svg><span class="brand-text"><strong>tGS Creative</strong><span>Strategy · Media · Brands</span></span></a>
+      <div class="nav-row">
+        <nav class="main-nav" data-site-nav>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="work.html">Work</a>
+          <a href="wya.html">WYA</a>
+          <a href="blog.html" aria-current="page">Writing</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button>
+        <button class="icon-btn hide-mobile" type="button" data-theme-toggle aria-label="Toggle theme"></button>
+      </div>
+    </div>
+  </header>
 
-    <!-- Blog Section -->
-    <section class="blog-hero">
-        <div class="image-carousel"></div>
-        <div class="hero-content">
-            <h1>Photography Blog</h1>
-            <p>Tips, insights, and behind-the-scenes content from tGS Studios</p>
-        </div>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="eyebrow">Writing</span>
+        <h1>Ideas worth publishing.</h1>
+        <div class="divider"></div>
+        <p class="lead">This section is designed for essays, observations, and thinking from inside the work — strategy, media, culture, publishing, and brand building.</p>
+      </div>
     </section>
 
-    <section class="blog-content">
-        <div class="container">
-            <div class="blog-grid" id="blog-posts">
-                <!-- Blog posts will be dynamically loaded here -->
-            </div>
+    <section class="section">
+      <div class="container">
+        <div class="posts-grid">
+          <article class="post-card reveal">
+            <span class="tag">Strategy</span>
+            <h3>Why visibility without positioning usually collapses under attention.</h3>
+            <p>Thoughts on the difference between being seen and being structurally ready to be seen.</p>
+            <a class="card-link" href="contact.html">Commission or enquire</a>
+          </article>
+          <article class="post-card reveal">
+            <span class="tag">Publishing</span>
+            <h3>What makes an intellectual voice legible across markets.</h3>
+            <p>On narrative framing, credibility transfer, and why context matters as much as content.</p>
+            <a class="card-link" href="contact.html">Commission or enquire</a>
+          </article>
+          <article class="post-card reveal">
+            <span class="tag">Culture</span>
+            <h3>Brand language is not decoration. It is discipline in public.</h3>
+            <p>A view on why the language around a brand should be treated as infrastructure, not polish.</p>
+            <a class="card-link" href="contact.html">Commission or enquire</a>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-logo-section">
-                    <img src="images/logo.png" alt="tGS Studios" class="footer-logo" onerror="this.style.display='none'; this.parentNode.innerHTML='<h2 style=\'color: #4A90E2; margin-bottom: 20px;\'>tGS Studios</h2>';">
-                    <p>Professional photography services capturing life's most precious moments with artistic excellence and creative vision.</p>
-                </div>
-            </div>
-            
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Photography Services</h3>
-                    <ul>
-                        <li><a href="services.html#wedding">Wedding Photography</a></li>
-                        <li><a href="services.html#portrait">Portrait Sessions</a></li>
-                        <li><a href="services.html#event">Event Photography</a></li>
-                        <li><a href="services.html#commercial">Commercial Work</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Explore</h3>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="blog.html">Photography Blog</a></li>
-                        <li><a href="contact.html">Get in Touch</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Get in Touch</h3>
-                    <p><i class="location-icon">📍</i> Salford, Greater Manchester</p>
-                    <p><i class="email-icon">✉️</i> info@tgsstudios.com</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">LinkedIn</a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Let's Create Together</h3>
-                    <p>Ready to capture your special moments? We're here to bring your vision to life.</p>
-                    <a href="contact.html" class="footer-cta-btn">Start Your Project</a>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 tGS Studios. All rights reserved.</p>
-                    <div class="footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                    </div>
-                </div>
-            </div>
+    <section class="section surface">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Editorial lanes</span>
+          <h2>The thinking here will move across a few clear lanes.</h2>
+        </header>
+        <div class="tag-row reveal">
+          <span class="tag">Strategy</span>
+          <span class="tag">Media</span>
+          <span class="tag">Culture</span>
+          <span class="tag">Publishing</span>
+          <span class="tag">Brand building</span>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-    <script src="js/analytics.js"></script>
-    <script src="js/blog-manager.js"></script>
-<!-- Footer -->
-    <footer class="footer">
-        <div class="footer-background-collage" id="footer-collage"></div>
-        <div class="footer-overlay"></div>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Get in Touch</h3>
-                    <p><i class="location-icon">📍</i> Salford, Greater Manchester</p>
-                    <p><i class="email-icon">✉️</i> info@tgsstudios.com</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/_tgsstudios" class="social-link" title="Follow us on Instagram" target="_blank" rel="noopener">Instagram</a>
-                        <a href="https://www.facebook.com/tGSStu/about" class="social-link" title="Like us on Facebook" target="_blank" rel="noopener">Facebook</a>
-                        <a href="https://wa.me/353874077700" class="social-link" title="Contact us on WhatsApp" target="_blank" rel="noopener">WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 tGS Studios. All rights reserved.</p>
-                </div>
-            </div>
+    <section class="section-tight">
+      <div class="container cta-band reveal">
+        <div>
+          <span class="eyebrow">In the meantime</span>
+          <h3>Need the thinking applied to an actual project?</h3>
+          <p>The writing will grow, but the work is already live.</p>
         </div>
-    </footer>
+        <div class="btn-row"><a class="btn btn-primary" href="contact.html">Get in touch</a><a class="btn btn-secondary" href="services.html">See services</a></div>
+      </div>
+    </section>
+  </main>
 
-    <script src="js/main.js"></script>
-    <script src="js/analytics.js"></script>
+  <footer class="site-footer">
+    <div class="container footer-grid"><div class="footer-col"><a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="14" stroke="currentColor" stroke-width="2"></rect><path d="M14 17H34" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path><path d="M24 17V31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path><path d="M16 31C18.5 34 21 35.5 24 35.5C27 35.5 29.5 34 32 31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path></svg><span class="brand-text"><strong>tGS Creative</strong><span>Strategy · Media · Brands</span></span></a><p>Writing, strategy, and editorial thinking from inside the work.</p></div><div class="footer-col"><h4>Pages</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="wya.html">WYA</a><a href="blog.html">Writing</a><a href="contact.html">Contact</a></div><div class="footer-col"><h4>Topics</h4><p>Strategy</p><p>Media</p><p>Publishing</p><p>Culture</p></div><div class="footer-col"><h4>Contact</h4><a href="mailto:info@tgsstudios.com">info@tgsstudios.com</a><a href="https://tgsstudios.co.uk" target="_blank" rel="noopener noreferrer">tgsstudios.co.uk</a><a href="https://www.linkedin.com/company/118834600" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div>
+    <div class="container footer-base"><p>&copy; <span data-year></span> tGS Creative. All rights reserved.</p><p>Currently live from tgsstudios.co.uk.</p></div>
+  </footer>
 </body>
 </html>
