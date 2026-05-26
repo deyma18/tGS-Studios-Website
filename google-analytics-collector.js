@@ -105,7 +105,7 @@ class GoogleAnalyticsCollector {
 
     async updateGoogleSheets(data) {
         // This function sends data to Google Sheets
-        const sheetsUrl = https://script.google.com/macros/s/AKfycbxqSOHruVvDLfzaawj-dEBhcngwOosPnK7U7qK1wMNvn0g1AvYg2Cau9Rxc6X_RfzA/exec;
+        const sheetsUrl = 'https://script.google.com/macros/s/AKfycbxqSOHruVvDLfzaawj-dEBhcngwOosPnK7U7qK1wMNvn0g1AvYg2Cau9Rxc6X_RfzA/exec';
         
         try {
             const response = await fetch(sheetsUrl, {
