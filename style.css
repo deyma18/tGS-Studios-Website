@@ -318,21 +318,26 @@ p { max-width: 70ch; color: var(--color-text-muted); }
 .value-card,
 .post-card,
 .brand-card,
-.info-card {
+.info-card,
+.season-card,
+.practice-card {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   background: var(--color-surface);
   box-shadow: var(--shadow-sm);
-  transition: box-shadow var(--transition), border-color var(--transition);
+  transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
 }
 .hero-card:hover,
 .card:hover,
 .panel:hover,
 .case-panel:hover,
 .post-card:hover,
-.brand-card:hover {
+.brand-card:hover,
+.season-card:hover,
+.practice-card:hover {
   border-color: var(--color-primary);
   box-shadow: var(--shadow-depth);
+  transform: translateY(-4px);
 }
 .hero-card {
   padding: var(--space-8);
@@ -387,7 +392,9 @@ p { max-width: 70ch; color: var(--color-text-muted); }
 .values-grid,
 .brand-grid,
 .service-grid,
-.dual-grid {
+.dual-grid,
+.seasons-grid,
+.practice-grid {
   display: grid;
   gap: var(--space-6);
 }
@@ -401,6 +408,8 @@ p { max-width: 70ch; color: var(--color-text-muted); }
 .metrics-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .values-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .posts-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.seasons-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .footer-grid { grid-template-columns: 1.6fr 1fr 1fr 1fr; }
 .card,
 .panel,
@@ -409,9 +418,12 @@ p { max-width: 70ch; color: var(--color-text-muted); }
 .value-card,
 .post-card,
 .brand-card,
-.info-card { padding: var(--space-6); }
+.info-card,
+.season-card,
+.practice-card { padding: var(--space-6); }
 .card-number,
-.metric-number {
+.metric-number,
+.season-number {
   display: block;
   margin-bottom: var(--space-2);
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
@@ -422,13 +434,16 @@ p { max-width: 70ch; color: var(--color-text-muted); }
   font-size: 2.5rem;
 }
 .metric-number { font-size: 3.25rem; }
+.season-number { font-size: 3rem; opacity: 0.5; }
 .card p,
 .panel p,
 .case-panel p,
 .post-card p,
 .brand-card p,
 .value-card p,
-.info-card p { margin-top: var(--space-3); }
+.info-card p,
+.season-card p,
+.practice-card p { margin-top: var(--space-3); }
 .card-link {
   display: inline-flex;
   align-items: center;
@@ -442,6 +457,98 @@ p { max-width: 70ch; color: var(--color-text-muted); }
   transition: color var(--transition);
 }
 .card-link:hover { color: var(--color-secondary); }
+
+/* WYA-Specific Styles */
+.seasons-intro {
+  display: grid;
+  gap: var(--space-5);
+  margin-top: var(--space-8);
+  padding: var(--space-8);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--color-primary) 3%, var(--color-surface));
+}
+
+.season-card {
+  padding: var(--space-8);
+  display: grid;
+  gap: var(--space-4);
+}
+
+.season-header {
+  display: grid;
+  gap: var(--space-2);
+  padding-bottom: var(--space-4);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.season-header h3 {
+  margin: 0;
+  font-size: var(--text-xl);
+  color: var(--color-text);
+}
+
+.season-tagline {
+  color: var(--color-primary);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.season-main {
+  font-size: var(--text-base);
+  color: var(--color-text);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.season-details {
+  display: grid;
+  gap: var(--space-3);
+  padding-top: var(--space-4);
+}
+
+.season-intuitive {
+  margin: 0;
+  color: var(--color-text-muted);
+  padding: var(--space-4);
+  border-left: 3px solid var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 5%, var(--color-surface));
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.season-intuitive strong {
+  color: var(--color-text);
+}
+
+.season-simplified {
+  margin: 0;
+  color: var(--color-text-faint);
+  font-size: var(--text-sm);
+}
+
+.season-simplified em {
+  color: var(--color-primary);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.practice-card {
+  padding: var(--space-6);
+  display: grid;
+  gap: var(--space-3);
+}
+
+.practice-card h3 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--text-lg);
+}
+
+.practice-card p {
+  margin: 0;
+}
 
 .insight-strip {
   border-top: 1px solid var(--color-divider);
@@ -714,7 +821,8 @@ p { max-width: 70ch; color: var(--color-text-muted); }
   .manifesto-grid,
   .metrics-grid,
   .case-results,
-  .form-grid .two {
+  .form-grid .two,
+  .practice-grid {
     grid-template-columns: 1fr;
   }
   .footer-grid { gap: var(--space-8); }
@@ -753,8 +861,11 @@ p { max-width: 70ch; color: var(--color-text-muted); }
   .newsletter,
   .quote-panel,
   .info-card,
-  .callout { padding: var(--space-5); }
+  .callout,
+  .season-card,
+  .practice-card { padding: var(--space-5); }
   .newsletter-form { grid-template-columns: 1fr; }
+  .seasons-grid { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
