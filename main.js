@@ -384,10 +384,10 @@ TGSApp.register('analytics', function() {
      */
     async function collectAndSyncAnalyticsData() {
         try {
-            const collector = new GoogleAnalyticsCollector(
-                'YOUR_GA4_PROPERTY_ID',
-                'YOUR_SERVICE_ACCOUNT_CREDENTIALS'
-            );
+           const collector = new GoogleAnalyticsCollector(
+            'G-T5VBQ62VZ2',
+            'YOUR_SERVICE_ACCOUNT_CREDENTIALS'
+        );
 
             console.log('📊 Collecting website data from Google Analytics...');
             
