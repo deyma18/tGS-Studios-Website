@@ -254,8 +254,8 @@ async function collectAndSyncAnalyticsData() {
     try {
         // Initialize the collector with your GA4 property ID
         const collector = new GoogleAnalyticsCollector(
-            'YOUR_GA4_PROPERTY_ID',
-            'YOUR_SERVICE_ACCOUNT_CREDENTIALS'
+    'G-T5VBQ62VZ2',
+    'YOUR_SERVICE_ACCOUNT_CREDENTIALS'
         );
 
         console.log('Collecting website data from Google Analytics...');
