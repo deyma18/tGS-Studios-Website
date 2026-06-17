@@ -1,3 +1,9 @@
+/* ============================================================
+   tGS Creative Works — Responsive CSS
+   Companion to style.css — breakpoints and content-visibility
+   ============================================================ */
+
+/* Performance: content-visibility for off-screen sections */
 .hero-copy,
 .section-head,
 .split-copy,
@@ -12,13 +18,252 @@
   contain-intrinsic-size: 1px 500px;
 }
 
+/* ============================================================
+   LARGE — min-width: 1200px
+   ============================================================ */
 @media (min-width: 1200px) {
-  .hero-inner { min-height: 68vh; }
+  .hero-inner {
+    min-height: 68vh;
+  }
+}
+
+/* ============================================================
+   TABLET — max-width: 980px
+   ============================================================ */
+@media (max-width: 980px) {
+  .hero-inner,
+  .service-top,
+  .newsletter,
+  .cards-2,
+  .work-grid,
+  .contact-grid,
+  .dual-grid,
+  .brand-grid,
+  .service-grid,
+  .footer-grid,
+  .posts-grid,
+  .values-grid,
+  .cards-3,
+  .manifesto-grid,
+  .metrics-grid,
+  .case-results,
+  .form-grid .two,
+  .practice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    gap: var(--space-8);
+  }
+
+  .cta-band {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .work-grid {
+    gap: var(--space-8);
+  }
+
+  .cards-3 {
+    gap: var(--space-6);
+  }
+
+  .hero-card {
+    margin-top: var(--space-8);
+  }
+}
+
+/* ============================================================
+   MOBILE — max-width: 760px
+   ============================================================ */
+@media (max-width: 760px) {
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .main-nav {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: calc(100% + 0.75rem);
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4);
+    box-shadow: var(--shadow-lg);
+    z-index: 50;
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
+
+  .nav-row {
+    margin-left: auto;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 11vw, 4rem);
+  }
+
+  .hero-card,
+  .card,
+  .panel,
+  .case-panel,
+  .contact-card,
+  .post-card,
+  .brand-card,
+  .service-block,
+  .manifesto-item,
+  .newsletter,
+  .quote-panel,
+  .info-card,
+  .callout,
+  .season-card,
+  .practice-card {
+    padding: var(--space-5);
+  }
+
+  .newsletter-form {
+    grid-template-columns: 1fr;
+  }
+
+  .seasons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head {
+    text-align: left;
+  }
+
+  .divider {
+    margin-left: 0;
+  }
+
+  .metric-number {
+    font-size: clamp(2.5rem, 10vw, 3.5rem);
+  }
+
+  .footer-base {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+}
+
+/* ============================================================
+   SMALL MOBILE — max-width: 540px
+   ============================================================ */
+@media (max-width: 540px) {
+  .btn-row {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-shell {
+    min-height: 72px;
+  }
+
+  .tag-row {
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.2rem, 12vw, 3rem);
+  }
+}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ============================================================
+   SOCIAL FLOAT BUTTON
+   ============================================================ */
+.social-float {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  z-index: 100;
+}
+
+.social-float a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-full);
+  background: var(--color-depth);
+  color: #fff;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition), background var(--transition);
+}
+
+.social-float a:hover {
+  transform: translateY(-3px);
+  background: var(--color-primary);
+}
+
+.social-float a.instagram:hover {
+  background: #E1306C;
+}
+
+.social-float a.youtube:hover {
+  background: #FF0000;
 }
 
 @media (max-width: 540px) {
-  .btn-row { width: 100%; }
-  .btn { width: 100%; }
-  .stat-grid { grid-template-columns: 1fr; }
-  .nav-shell { min-height: 72px; }
+  .social-float {
+    bottom: var(--space-4);
+    right: var(--space-4);
+  }
+
+  .social-float a {
+    width: 42px;
+    height: 42px;
+  }
 }
