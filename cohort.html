@@ -3,44 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Analytics GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5VBQ62VZ2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-T5VBQ62VZ2');
-</script>
-  <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<meta name="theme-color" content="#1E5FFF">
-  
-  <title>Market Mindset Training — MPS Beauty Marketing Cohort | tGS Creative Works</title>
-  <meta name="description" content="The MPS Beauty Marketing Cohort is a tGS Creative-designed training programme. Learn to read a market, write a brief, and run a real campaign. Open to participants across Nigeria and West Africa.">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5VBQ62VZ2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T5VBQ62VZ2');
+  </script>
+  <title>tGS Creative Marketing Cohort | tGS Creative Works</title>
+  <meta name="description" content="The tGS Creative Marketing Cohort is a structured remote training programme for aspiring marketers across Nigeria and West Africa. Applications open now.">
+  <link rel="icon" type="image/jpeg" href="tsg_1750566657793.jpg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#1E5FFF">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
+  <style>
+    .wave-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-5)}
+    .wave-card{padding:var(--space-6);border-radius:var(--radius-lg);background:var(--color-surface);border:1px solid var(--color-border)}
+    .wave-card strong{display:block;font-size:1.05rem;margin-bottom:var(--space-2)}
+    .fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-5)}
+    .fit-card{padding:var(--space-5);border-radius:var(--radius-lg);background:var(--color-surface);border:1px solid var(--color-border)}
+    .process-list{display:grid;gap:var(--space-4);counter-reset:steps}
+    .process-step{display:grid;grid-template-columns:2.5rem 1fr;gap:var(--space-4);align-items:start;padding:var(--space-5);border-radius:var(--radius-lg);background:var(--color-surface);border:1px solid var(--color-border);counter-increment:steps}
+    .process-step::before{content:counter(steps);font-size:1.4rem;font-family:'Cormorant Garamond',serif;font-weight:600;color:var(--color-primary);line-height:1}
+    @media(max-width:980px){.wave-grid,.fit-grid{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
-
   <a class="skip-link" href="#main">Skip to main content</a>
-
   <header class="site-header">
-    <div class="container">
-      <div class="nav-shell">
-        <a class="brand" href="index.html" aria-label="tGS Creative Works home">
-          <svg class="brand-mark" viewBox="0 0 42 42" fill="none" aria-hidden="true">
-            <circle cx="21" cy="21" r="20" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M13 16h6M16 16v10M22 16h5a3 3 0 010 6h-5v-6zM22 22h5.5a3.5 3.5 0 010 7H22v-7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-          <div class="brand-text">
-            <strong>tGS Creative</strong>
-            <span>Works</span>
-          </div>
-        </a>
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="tGS Creative home">
+        <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect x="4" y="4" width="40" height="40" rx="14" stroke="currentColor" stroke-width="2"></rect>
+          <path d="M14 17H34" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+          <path d="M24 17V31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+          <path d="M16 31C18.5 34 21 35.5 24 35.5C27 35.5 29.5 34 32 31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+        </svg>
+        <span class="brand-text"><strong>tGS Creative</strong><span>Strategy · Media · Brands</span></span>
+      </a>
+      <div class="nav-row">
         <nav class="main-nav" data-site-nav aria-label="Primary navigation">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
@@ -50,14 +55,11 @@
           <a href="blog.html">Writing</a>
           <a href="contact.html">Contact</a>
         </nav>
-        <div class="nav-row">
-          <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          </button>
-          <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Open menu">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-          </button>
-        </div>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+        </button>
+        <button class="icon-btn hide-mobile" type="button" data-theme-toggle aria-label="Toggle theme"></button>
+        <a class="btn btn-primary hide-mobile" href="cohort-apply.html">Apply now</a>
       </div>
     </div>
   </header>
@@ -67,204 +69,166 @@
     <section class="section surface-alt">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">A tGS Creative Programme — Nationwide Cohort Intake, Q3 2026</span>
-          <h1>Learn to market real products<br>in a real market.</h1>
+          <span class="eyebrow">tGS Creative Marketing Cohort — Intake 1</span>
+          <h1>Learn to market. Actually market. Not just post.</h1>
           <div class="divider"></div>
-          <p class="lead">The MPS Beauty Marketing Cohort is a structured remote training programme for aspiring marketers across Nigeria and West Africa. You will learn to read a market, write a brief, run a campaign, and defend your choices. No theory for its own sake. No mock exercises. Real products, real buyers, real feedback.</p>
-          <div style="margin-top: var(--space-8); display:flex; gap: var(--space-4); flex-wrap:wrap;">
-            <a href="#apply" class="btn btn-primary">Apply for Q3 intake</a>
-            <a href="#programme" class="btn btn-secondary">See the programme</a>
+          <p class="lead">A structured remote training programme for aspiring marketers across Nigeria and West Africa. You will learn to read a market, write a brief, run a campaign, and defend your choices.</p>
+          <p>No theory for its own sake. No mock exercises. Real products, real buyers, real feedback.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="cohort-apply.html">Apply for Intake 1</a>
+            <a class="btn btn-secondary" href="#how-it-works">How it works</a>
+          </div>
+          <p class="faint" style="margin-top:var(--space-4);">Applications for Intake 1 are open now. Places are limited. Cohort begins mid to end of July 2026.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">What this is</span><h2>This is not a social media course</h2><div class="divider"></div></div>
+        <div class="work-grid reveal">
+          <div class="case-panel">
+            <p>The platform is a tool. The mind is the asset. Every task in this programme is designed to build one habit: think before you post.</p>
+            <p>The tGS Creative Marketing Cohort trains people to understand markets, not just manage content calendars. You will study a real product category, map real buyers, write real briefs, and produce work that gets real critique. You will not be handed templates and told to fill them in.</p>
+            <p>The first intake is built around the Nigerian consumer goods market, specifically fast-moving beauty and personal care products. This is a high-volume, high-competition, price-sensitive market with real brand positioning challenges. It is an excellent place to learn how marketing actually works.</p>
+          </div>
+          <div class="quote-card reveal">
+            <span class="eyebrow">The standard</span>
+            <h3>You are not learning to look busy online. You are learning to move product, build audiences, and understand why campaigns succeed or fail.</h3>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-tight surface">
+    <section class="section surface-alt" id="how-it-works">
       <div class="container">
-        <div class="metrics-grid reveal">
-          <div style="text-align:center;">
-            <strong class="metric-number">&#8358;0</strong>
-            <span style="display:block; font-size:var(--text-sm); color:var(--color-text-muted); text-transform:uppercase; letter-spacing:0.08em;">Upfront cost<br>to participate</span>
+        <div class="section-head reveal"><span class="eyebrow">The programme</span><h2>Level 1: Market Mindset Training</h2><div class="divider"></div><p>Level 1 runs across three waves. Each wave builds on the last. There are no shortcuts between them.</p></div>
+        <div class="wave-grid reveal">
+          <div class="wave-card">
+            <strong>Wave 1: Market Awareness</strong>
+            <p>You learn the Nigerian consumer goods market as a system. You map the buyers, the sellers, the competitors, and the regulatory environment. By the end of Wave 1 you can describe a real buyer with real motivations, not a demographic with no face.</p>
           </div>
-          <div style="text-align:center;">
-            <strong class="metric-number">100%</strong>
-            <span style="display:block; font-size:var(--text-sm); color:var(--color-text-muted); text-transform:uppercase; letter-spacing:0.08em;">Remote<br>delivery</span>
+          <div class="wave-card">
+            <strong>Wave 2: Guided Imitation</strong>
+            <p>You receive a working campaign brief and a complete example. You write your own version, receive specific critique, and revise. The assessment is not whether the content looks good. It is whether you can explain the choices you made.</p>
           </div>
-          <div style="text-align:center;">
-            <strong class="metric-number">3</strong>
-            <span style="display:block; font-size:var(--text-sm); color:var(--color-text-muted); text-transform:uppercase; letter-spacing:0.08em;">Levels of<br>progression</span>
+          <div class="wave-card">
+            <strong>Wave 3: Simple Adaptation</strong>
+            <p>A new brief. A new product. A new audience. No example to copy. You produce an independent mini-campaign and then transfer the same logic to an offline format. If the thinking holds without the platform, you are ready to progress.</p>
           </div>
-          <div style="text-align:center;">
-            <strong class="metric-number">Real</strong>
-            <span style="display:block; font-size:var(--text-sm); color:var(--color-text-muted); text-transform:uppercase; letter-spacing:0.08em;">Products.<br>Real market.</span>
-          </div>
+        </div>
+        <div class="panel reveal" style="margin-top:var(--space-8);">
+          <span class="eyebrow">What comes after</span>
+          <p>Participants who complete Level 1 move to Level 2, unlock performance-based commission tiers, and become eligible for team lead and campaign management roles within the tGS Creative network.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="programme">
+    <section class="section">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">The Programme</span>
-          <h2>What you are actually learning</h2>
-          <div class="divider"></div>
-          <p class="lead">This is not a social media course. The platform is a tool. The mind is the asset. Every task in this programme is designed to build one habit: think before you post.</p>
-        </div>
-
-        <div class="cards-2 reveal" style="margin-bottom: var(--space-12);">
-          <div class="panel">
-            <span class="eyebrow">Level 1: Beginner</span>
-            <h3>Three waves. One market. Real buyers from day one.</h3>
-            <p><strong>Wave 1: Market Awareness.</strong> You learn the Nigerian beauty market as a system. You map the buyers, the sellers, the competitors, and the regulatory environment. By the end of this wave you can describe a real buyer with real motivations, not a demographic with no face.</p>
-            <p><strong>Wave 2: Guided Imitation.</strong> You receive a working campaign brief and a complete example. You write your own version, receive specific critique, and revise. The assessment is not whether the content looks good. It is whether you can explain the choices you made.</p>
-            <p><strong>Wave 3: Simple Adaptation.</strong> A new brief. A new product. A new audience. No example to copy. You produce an independent mini-campaign and then transfer the same logic to an offline format, a verbal pitch or a product display card. If the thinking holds without the platform, you are ready to progress.</p>
+        <div class="section-head reveal"><span class="eyebrow">The product context</span><h2>Real products. Real market.</h2><div class="divider"></div></div>
+        <div class="work-grid reveal">
+          <div class="case-panel">
+            <p>You are not practising on a fictional case study. Intake 1 is built around real consumer products distributed across Nigeria. You will be given access to the product catalog, the pricing structure, and the competitive context as part of the programme.</p>
+            <p>You bring consistency, creativity, and the willingness to think carefully. Everything else is provided.</p>
           </div>
-          <div class="panel">
-            <span class="eyebrow">The Products</span>
-            <h3>MPS Face Masks and Hand Creams. Sold across Nigeria.</h3>
-            <p>The products are real. MPS Beauty products are genuine makeup, skincare, and cosmetics distributed by MPS Retail across Nigeria. You are not practising on a fictional case study. You are learning to sell something that people are buying right now.</p>
-            <p>Access to the product catalog, the pricing structure, and the competitive context is all provided as part of the programme. You bring consistency, creativity, and the willingness to think carefully.</p>
-            <span class="eyebrow" style="margin-top: var(--space-8); display:block;">The Delivery</span>
-            <h3>WhatsApp, voice notes, written briefs, and video calls.</h3>
+          <div class="quote-card">
+            <span class="eyebrow">Programme delivery</span>
             <p>The programme runs entirely through the channels you will use when you are running actual campaigns. No separate platform to learn. No LMS login to forget. The training environment and the working environment are deliberately the same.</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="surface-alt" style="border-radius: var(--radius-lg); padding: var(--space-8); margin-bottom: var(--space-12);">
-          <div class="section-head reveal" style="margin-bottom: var(--space-8);">
-            <span class="eyebrow">The Progression Path</span>
-            <h2>How you move through the programme</h2>
+    <section class="section surface-alt">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Is this for you</span><h2>Who belongs in this cohort</h2><div class="divider"></div></div>
+        <div class="fit-grid reveal">
+          <div class="fit-card">
+            <strong>You are a good fit if</strong>
+            <ul class="service-list" style="margin-top:var(--space-3);">
+              <li>You are genuinely curious about how things sell</li>
+              <li>You notice what makes a message land and think about why</li>
+              <li>You are interested in buyers, not just content</li>
+              <li>You are willing to invest time and follow through on feedback</li>
+              <li>You thrive on professional-standard independence</li>
+              <li>You take initiative without waiting to be told</li>
+            </ul>
           </div>
-          <div class="cards-2 reveal">
-            <div style="padding: var(--space-6); border-left: 3px solid var(--color-primary);">
-              <span class="eyebrow">Step 01</span>
-              <h3>Apply</h3>
-              <p>Submit the intake form below. Every response is read. We are looking for genuine interest, self-direction, and the clarity to explain why you want to be here.</p>
-            </div>
-            <div style="padding: var(--space-6); border-left: 3px solid var(--color-primary);">
-              <span class="eyebrow">Step 02</span>
-              <h3>Onboard</h3>
-              <p>Selected participants are admitted to the training space: the WhatsApp group, the Level 1 curriculum, the product catalog, and the first wave brief.</p>
-            </div>
-            <div style="padding: var(--space-6); border-left: 3px solid var(--color-secondary);">
-              <span class="eyebrow">Step 03</span>
-              <h3>Train and execute</h3>
-              <p>Work through the three waves of Level 1. Receive feedback. Revise. Demonstrate that you understand the market, the buyer, and the campaign logic before moving forward.</p>
-            </div>
-            <div style="padding: var(--space-6); border-left: 3px solid var(--color-secondary);">
-              <span class="eyebrow">Step 04</span>
-              <h3>Progress and earn</h3>
-              <p>Participants who complete Level 1 move to Level 2, unlock performance-based commission tiers, and become eligible for team lead and campaign management roles.</p>
+          <div class="fit-card">
+            <strong>This is not the right programme if</strong>
+            <ul class="service-list" style="margin-top:var(--space-3);">
+              <li>You are looking for a certificate to display rather than skills to use</li>
+              <li>You need daily hand-holding and constant prompting</li>
+              <li>You want theory without application</li>
+              <li>You are not prepared to revise your work after critique</li>
+              <li>You are not based in or familiar with the Nigerian market</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">The process</span><h2>From application to active cohort</h2><div class="divider"></div></div>
+        <div class="process-list reveal">
+          <div class="process-step">
+            <div></div>
+            <div>
+              <strong>Submit your application</strong>
+              <p>Complete the intake form. Every response is read. We are looking for genuine interest, self-direction, and the clarity to explain why you want to be here. Be specific. Generic answers will not be selected.</p>
             </div>
           </div>
+          <div class="process-step">
+            <div></div>
+            <div>
+              <strong>Selection</strong>
+              <p>Successful applicants are contacted within five working days of the intake closing. Slots are limited. If you do not hear back, your application was not selected for this intake cycle. Future intakes will be announced on this page.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div></div>
+            <div>
+              <strong>Admitted to the training space</strong>
+              <p>You receive access to the WhatsApp group, the Level 1 curriculum, the product catalog, and the first wave brief.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div></div>
+            <div>
+              <strong>Work through Level 1</strong>
+              <p>Three waves. Real feedback. Revision. The trainer intervenes for strategic reviews and major feedback points, not for daily troubleshooting.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div></div>
+            <div>
+              <strong>Progress to Level 2</strong>
+              <p>Complete Level 1, demonstrate understanding of the market, the buyer, and the campaign logic. Unlock Level 2, performance tiers, and team eligibility.</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-row reveal" style="margin-top:var(--space-8); justify-content:center;">
+          <a class="btn btn-primary" href="cohort-apply.html">Apply for Intake 1</a>
         </div>
       </div>
     </section>
 
     <section class="section surface-alt">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Who This Is For</span>
-          <h2>Three things we are looking for</h2>
-          <div class="divider"></div>
-        </div>
-        <div class="cards-3 reveal">
-          <article class="post-card">
-            <span class="eyebrow">01: Interest</span>
-            <h3>Genuinely curious about how things sell</h3>
-            <p>You notice what makes a message land. You read captions and think about why they were written that way. You are interested in buyers, not just content.</p>
-          </article>
-          <article class="post-card">
-            <span class="eyebrow">02: Consistency</span>
-            <h3>Prepared to show up daily and do the work</h3>
-            <p>Social selling rewards discipline. You are willing to invest time, follow through on feedback, and improve without being pushed to do it.</p>
-          </article>
-          <article class="post-card">
-            <span class="eyebrow">03: Independence</span>
-            <h3>Self-directing and not easily stuck</h3>
-            <p>The programme is remote and the trainer has limited availability for routine questions. You read the materials, follow the structure, and solve small problems on your own before escalating.</p>
-          </article>
-        </div>
-        <div class="panel reveal" style="margin-top: var(--space-10);">
-          <span class="eyebrow">Important</span>
-          <h3>This cohort is self-propelling by design.</h3>
-          <p>The training is structured but independent. The trainer intervenes for strategic reviews and major feedback points, not for daily troubleshooting. If you thrive on professional-standard independence and take initiative without waiting to be told, you will do well here. If you need constant hand-holding, this is not the right programme at this time.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="apply">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Intake Application — Q3 2026</span>
-          <h2>Apply for the cohort</h2>
-          <div class="divider"></div>
-          <p class="lead">All responses are read by human coordinators. Be specific. Generic answers will not be selected. Slots are limited.</p>
-        </div>
-
+        <div class="section-head reveal"><span class="eyebrow">For organisations</span><h2>Bespoke cohorts</h2><div class="divider"></div></div>
         <div class="work-grid reveal">
-          <div>
-            <form
-              action="https://formspree.io/f/mzdwkypj"
-              method="POST"
-              class="contact-form"
-              novalidate
-            >
-              <div class="form-group">
-                <label for="cohort-name">Full name</label>
-                <input type="text" id="cohort-name" name="name" required placeholder="Your full name">
-              </div>
-              <div class="form-group">
-                <label for="cohort-email">Email address</label>
-                <input type="email" id="cohort-email" name="email" required placeholder="Your best email">
-              </div>
-              <div class="form-group">
-                <label for="cohort-location">Where are you based?</label>
-                <input type="text" id="cohort-location" name="location" required placeholder="City and country">
-              </div>
-              <div class="form-group">
-                <label for="cohort-why">Why do you want to join this cohort?</label>
-                <textarea id="cohort-why" name="why" rows="4" required placeholder="Be specific. What draws you to this programme and what do you want to get from it?"></textarea>
-              </div>
-              <div class="form-group">
-                <label for="cohort-experience">Any prior marketing or selling experience?</label>
-                <textarea id="cohort-experience" name="experience" rows="3" placeholder="None is fine. Be honest about where you are starting from."></textarea>
-              </div>
-              <input type="hidden" name="_subject" value="MPS Cohort Application — tGS Creative Works">
-              <input type="hidden" name="source" value="cohort-page">
-              <button type="submit" class="btn btn-primary" style="width:100%; margin-top: var(--space-4);">Submit application</button>
-            </form>
+          <div class="case-panel">
+            <p>The Market Mindset Training framework is available for organisations who need to build marketing capability around a real product and a real market. tGS Creative designs and delivers bespoke cohorts for brands, distributors, and internal marketing teams.</p>
+            <p>If you are running a product, a brand, or a sales network and need your people to think like marketers rather than just execute tasks, talk to us.</p>
+            <a class="btn btn-secondary" href="contact.html" style="margin-top:var(--space-4); display:inline-block;">Talk to us about a bespoke programme</a>
           </div>
-          <div>
-            <div class="panel" style="margin-bottom: var(--space-6);">
-              <span class="eyebrow">Data and Privacy</span>
-              <h3>Your details are handled carefully.</h3>
-              <p>Application data is used only for cohort selection and programme communication. It is never distributed to third parties.</p>
-            </div>
-            <div class="panel" style="margin-bottom: var(--space-6);">
-              <span class="eyebrow">Response Window</span>
-              <h3>We read every application.</h3>
-              <p>Successful applicants will be contacted within five working days of the intake closing. If you do not hear back, your application was not selected for this intake cycle. Future intakes will be announced on this page.</p>
-            </div>
-            <div class="panel">
-              <span class="eyebrow">For Organisations</span>
-              <h3>Want to run this programme for your team?</h3>
-              <p>The Market Mindset Training framework is available for organisations who need to build marketing capability around a real product and a real market. tGS Creative designs and delivers bespoke cohorts.</p>
-              <a href="contact.html" class="card-link" style="margin-top:var(--space-3); display:inline-block;">Talk to us about a bespoke programme ›</a>
-            </div>
+          <div class="quote-card">
+            <span class="eyebrow">Application notice</span>
+            <p>Application data is used only for cohort selection and programme communication. It is never distributed to third parties.</p>
+            <p style="margin-top:var(--space-3);">Questions: <a href="mailto:info@tgsstudios.com">info@tgsstudios.com</a></p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section surface-alt">
-      <div class="container">
-        <div class="reveal" style="display:flex; justify-content:space-between; align-items:center; gap:var(--space-8); flex-wrap:wrap; padding: var(--space-6) 0;">
-          <div>
-            <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-3);">Want to see the thinking behind this programme?</h2>
-            <p>Read the case study on how tGS Creative designed and built the Market Mindset Training framework.</p>
-          </div>
-          <a href="work.html#mps-cohort" class="btn btn-secondary">See the case study ›</a>
         </div>
       </div>
     </section>
@@ -292,9 +256,9 @@
           <a href="contact.html">Send an enquiry</a>
         </div>
         <div class="footer-col">
-          <strong style="display:block; margin-bottom:var(--space-3); font-size:var(--text-sm); text-transform:uppercase; letter-spacing:0.08em;">Brands</strong>
-          <a href="wya.html">WYA: Wear Your Ambition</a>
-          <a href="https://www.linkedin.com/company/118834600" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <strong style="display:block; margin-bottom:var(--space-3); font-size:var(--text-sm); text-transform:uppercase; letter-spacing:0.08em;">Cohort</strong>
+          <a href="cohort-apply.html">Apply now</a>
+          <a href="#process">How it works</a>
         </div>
       </div>
       <div class="footer-base">
@@ -303,9 +267,7 @@
       </div>
     </div>
   </footer>
-
   <script src="business-data.js" defer></script>
-    <!-- Social float buttons -->
   <div class="social-float" aria-label="Social links">
     <a href="https://www.instagram.com/tgscr8iv?igsh=Z3hpamx1M292dTJ0&utm_source=qr" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="tGS Creative on Instagram">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
