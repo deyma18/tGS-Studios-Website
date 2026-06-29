@@ -21,16 +21,12 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
   <style>
-    .wave-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-5)}
+    .wave-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-6)}
     .wave-card{padding:var(--space-6);border-radius:var(--radius-lg);background:var(--color-surface);border:1px solid var(--color-border)}
-    .wave-card strong{display:block;font-size:1.05rem;margin-bottom:var(--space-2)}
-    .fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-5)}
-    .fit-card{padding:var(--space-5);border-radius:var(--radius-lg);background:var(--color-surface);border:1px solid var(--color-border)}
-    .process-list{display:grid;gap:var(--space-4);counter-reset:steps}
-    .process-step{display:grid;grid-template-columns:3rem 1fr;gap:var(--space-4);align-items:start;padding:var(--space-5);border-radius:var(--radius-lg);background:var(--color-surface);border:1px solid var(--color-border);counter-increment:steps}
-    .process-step::before{content:counter(steps);font-size:1.4rem;font-family:'Cormorant Garamond',serif;font-weight:600;color:var(--color-primary);line-height:1;min-width:3rem}
-    .process-step > div:last-child{min-width:0;word-wrap:break-word}
-    .process-step strong{display:block;margin-bottom:var(--space-2)}
+    .wave-card strong{display:block;font-size:1.05rem;margin-bottom:var(--space-3);color:var(--color-text)}
+    .fit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-6)}
+    .fit-card{padding:var(--space-6);border-radius:var(--radius-lg);background:var(--color-surface);border:1px solid var(--color-border)}
+    .fit-card strong{display:block;margin-bottom:var(--space-3);color:var(--color-text)}
     @media(max-width:980px){.wave-grid,.fit-grid{grid-template-columns:1fr}}
   </style>
 </head>
@@ -94,7 +90,7 @@
             <p>The tGS Creative Marketing Cohort trains people to understand markets, not just manage content calendars. You will study a real product category, map real buyers, write real briefs, and produce work that gets real critique. You will not be handed templates and told to fill them in.</p>
             <p>The first intake is built around the Nigerian consumer goods market, specifically fast-moving beauty and personal care products. This is a high-volume, high-competition, price-sensitive market with real brand positioning challenges. It is an excellent place to learn how marketing actually works.</p>
           </div>
-          <div class="quote-card reveal">
+          <div class="panel reveal">
             <span class="eyebrow">The standard</span>
             <h3>You are not learning to look busy online. You are learning to move product, build audiences, and understand why campaigns succeed or fail.</h3>
           </div>
@@ -134,7 +130,7 @@
             <p>You are not practising on a fictional case study. Intake 1 is built around real consumer products distributed across Nigeria. You will be given access to the product catalog, the pricing structure, and the competitive context as part of the programme.</p>
             <p>You bring consistency, creativity, and the willingness to think carefully. Everything else is provided.</p>
           </div>
-          <div class="quote-card">
+          <div class="panel">
             <span class="eyebrow">Programme delivery</span>
             <p>The programme runs entirely through the channels you will use when you are running actual campaigns. No separate platform to learn. No LMS login to forget. The training environment and the working environment are deliberately the same.</p>
           </div>
@@ -174,41 +170,31 @@
     <section class="section" id="process">
       <div class="container">
         <div class="section-head reveal"><span class="eyebrow">The process</span><h2>From application to active cohort</h2><div class="divider"></div></div>
-        <div class="process-list reveal">
-          <div class="process-step">
-            <div></div>
-            <div>
-              <strong>Submit your application</strong>
-              <p>Complete the intake form. Every response is read. We are looking for genuine interest, self-direction, and the clarity to explain why you want to be here. Be specific. Generic answers will not be selected.</p>
-            </div>
+        <div class="cards-2 reveal">
+          <div class="card">
+            <span class="card-number">1</span>
+            <h4>Submit your application</h4>
+            <p>Complete the intake form. Every response is read. We are looking for genuine interest, self-direction, and the clarity to explain why you want to be here. Be specific. Generic answers will not be selected.</p>
           </div>
-          <div class="process-step">
-            <div></div>
-            <div>
-              <strong>Selection</strong>
-              <p>Successful applicants are contacted within five working days of the intake closing. Slots are limited. If you do not hear back, your application was not selected for this intake cycle. Future intakes will be announced on this page.</p>
-            </div>
+          <div class="card">
+            <span class="card-number">2</span>
+            <h4>Selection</h4>
+            <p>Successful applicants are contacted within five working days of the intake closing. Slots are limited. If you do not hear back, your application was not selected for this intake cycle. Future intakes will be announced on this page.</p>
           </div>
-          <div class="process-step">
-            <div></div>
-            <div>
-              <strong>Admitted to the training space</strong>
-              <p>You receive access to the WhatsApp group, the Level 1 curriculum, the product catalog, and the first wave brief.</p>
-            </div>
+          <div class="card">
+            <span class="card-number">3</span>
+            <h4>Admitted to the training space</h4>
+            <p>You receive access to the WhatsApp group, the Level 1 curriculum, the product catalog, and the first wave brief.</p>
           </div>
-          <div class="process-step">
-            <div></div>
-            <div>
-              <strong>Work through Level 1</strong>
-              <p>Three waves. Real feedback. Revision. The trainer intervenes for strategic reviews and major feedback points, not for daily troubleshooting.</p>
-            </div>
+          <div class="card">
+            <span class="card-number">4</span>
+            <h4>Work through Level 1</h4>
+            <p>Three waves. Real feedback. Revision. The trainer intervenes for strategic reviews and major feedback points, not for daily troubleshooting.</p>
           </div>
-          <div class="process-step">
-            <div></div>
-            <div>
-              <strong>Progress to Level 2</strong>
-              <p>Complete Level 1, demonstrate understanding of the market, the buyer, and the campaign logic. Unlock Level 2, performance tiers, and team eligibility.</p>
-            </div>
+          <div class="card">
+            <span class="card-number">5</span>
+            <h4>Progress to Level 2</h4>
+            <p>Complete Level 1, demonstrate understanding of the market, the buyer, and the campaign logic. Unlock Level 2, performance tiers, and team eligibility.</p>
           </div>
         </div>
         <div class="btn-row reveal" style="margin-top:var(--space-8); justify-content:center;">
@@ -226,7 +212,7 @@
             <p>If you are running a product, a brand, or a sales network and need your people to think like marketers rather than just execute tasks, talk to us.</p>
             <a class="btn btn-secondary" href="contact.html" style="margin-top:var(--space-4); display:inline-block;">Talk to us about a bespoke programme</a>
           </div>
-          <div class="quote-card">
+          <div class="panel">
             <span class="eyebrow">Application notice</span>
             <p>Application data is used only for cohort selection and programme communication. It is never distributed to third parties.</p>
             <p style="margin-top:var(--space-3);">Questions: <a href="mailto:info@tgsstudios.com">info@tgsstudios.com</a></p>
@@ -279,4 +265,4 @@
     </a>
   </div>
 </body>
-</html>
+</html>  
